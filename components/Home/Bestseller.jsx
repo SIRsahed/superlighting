@@ -16,15 +16,8 @@ const Bestseller = () => {
                 <div className="">
                     <div className="w-full sm:w-auto md:w-auto  realtive">
                         <Image className='' src={lights} alt="Best seller lighting product" width={500} height={500} priority quality={100} />
-                    
-                        <div className="absolute top-2 left-2 bg-green-300 text-white text-xs font-bold px-2 py-1 rounded">
-                            New
-                        </div>
-
-                        
-                        <div className="absolute top-2 right-2 bg-green-300 text-white text-xs font-bold px-2 py-1 rounded">
-                            10%
-                        </div>
+                        <div className="absolute top-2 left-2 bg-green-300 text-white text-xs font-bold px-2 py-1 rounded">New</div>
+                        <div className="absolute top-2 right-2 bg-green-300 text-white text-xs font-bold px-2 py-1 rounded">10%</div>
                     </div>
                     <div className="items-center align-middle m-5">
                     <p className='text-center m-5'>Product Name</p>
