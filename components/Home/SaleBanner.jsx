@@ -5,7 +5,7 @@ const SaleBanner = () => {
     
     <section className='sale-banner container px-6 items-center align-middle'>
 
-    <div className="text-center m-10">
+    <div className="text-center m-5 sm:m-10 px-4 ">
         <div className="">
             <p className=' text-2xl'>Every Products For 7 Days</p>
         </div>
