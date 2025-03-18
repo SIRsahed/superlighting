@@ -35,7 +35,7 @@ const Category = () => {
     <section className='category pt-8 lg:pt-10 bg-white'>
         <div className="container">
            
-            <h2 className='text-[#2e2e2e] text-2xl md:text-3xl font-bold'>Categories</h2>
+            <h2 className='text-[#2e2e2e] text-2xl md:text-3xl font-bold px-5 lg:px-10'>Categories</h2>
            
             {/* card-area */}
             <div className="category-card pt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center px-5 lg:px-10">
