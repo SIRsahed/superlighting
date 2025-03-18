@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image"
 import Banner1 from "../../assets/banner7.avif";
+
+
 const Banner = () => {
   return (
-    <section className=" relative h-[90vh] w-[100vw] object-cover -z-1 pt-10 lg:pt-20 overflow-x-hidden">
+    <section className=" relative h-[90vh] w-[100vw] object-cover -z-1 pt-10 lg:pt-20 overflow-x-hidden ">
       {/* banner-image */}
       <Image alt="banner" src={Banner1} fill={true} />
       <div className="container absolute px-10 lg:px-20 ">
