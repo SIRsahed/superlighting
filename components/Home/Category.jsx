@@ -38,7 +38,7 @@ const Category = () => {
             <h2 className='text-[#2e2e2e] text-2xl md:text-3xl font-bold'>Categories</h2>
            
             {/* card-area */}
-            <div className="category-card pt-5 grid grid-cols-2 lg:grid-cols-4 gap-8 items-center ">
+            <div className="category-card pt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center px-5 lg:px-10">
                 {categoryList.map((item,i) => (
                     <div key={i}>
                     <div  className="card border-2 border-[#1B6732]">
