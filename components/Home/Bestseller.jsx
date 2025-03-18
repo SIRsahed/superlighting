@@ -109,25 +109,7 @@ const Bestseller = () => {
                     </div>
                 </div>
             </div>
-            <div className="">
-                <div className="">
-                    <div className="w-full sm:w-auto md:w-auto  ">
-                        <Image className='' src={lights} alt="Best seller lighting product" width={500} height={500} priority quality={100} />
-                    </div>
-                    <div className="items-center align-middle m-5">
-                    <p className='text-center m-5'>Product Name</p>
-                    <div className="flex text-center justify-center m-5 gap-2">
-                        <IoStar />
-                        <IoStar />
-                        <IoStar />
-                        <IoStar />
-                        <IoStar />
-                        <p className='text-center '>reviews</p>
-                    </div>
-                    <p className='text-center m-4 text-2xl font-semibold'> $42.00 </p>
-                    </div>
-                </div>
-            </div>
+            
             
         </div>
         <div className="">
