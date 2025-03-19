@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from "next/image"
-import Star from "../../assets/star.png";
-// import User from "../../assets/user.jpeg";
-import User2 from "../../assets/user2.jpg";
-// import User3 from "../../assets/user3.jpeg";
+import Star from "@/public/star.png";
+// import User from "@/public/user.jpeg";
+import User2 from "@/public/user2.jpg";
+// import User3 from "@/public/user3.jpeg";
 
 const ClientSay = () => {
     const ClientSays = [

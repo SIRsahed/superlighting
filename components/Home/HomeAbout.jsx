@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import about from "@/assets/about1.jpg";
-import aboutone from "@/assets/about2.jpg";
-import icon from "@/assets/icon.png";
-import happy from "@/assets/happy.png";
-import quality from "@/assets/quality.png";
-import champion from "@/assets/champion.png";
-import setting from "@/assets/setting.png";
-import awards from "@/assets/awards.png";
+import about from "@/public/about1.jpg";
+import aboutone from "@/public/about2.jpg";
+import icon from "@/public/icon.png";
+import happy from "@/public/happy.png";
+import quality from "@/public/quality.png";
+import champion from "@/public/champion.png";
+import setting from "@/public/setting.png";
+import awards from "@/public/awards.png";
 
 const HomeAbout = () => {
     const brand = [

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image"
-import Banner7 from "@/assets/scnd_bg.jpg";
+import Banner7 from "@/public/banner_bg.jpg";
 
 const Banner = () => {
 

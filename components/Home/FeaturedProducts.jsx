@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import floodlight from '../../assets/floodlight.jpg'
-import lights from '../../assets/lights.jpg'
+import floodlight from '@/public/floodlight.jpg'
+import lights from '@/public/lights.jpg'
 import { IoStar } from "react-icons/io5"; 
 import { CiShare2 } from "react-icons/ci";
 import { IoMdHeart } from "react-icons/io";

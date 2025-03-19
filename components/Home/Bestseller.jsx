@@ -1,13 +1,11 @@
 "use client";
 import React from 'react'
 import Image from 'next/image'
-import { IoStar } from "react-icons/io5"; 
-import { CiHeart } from "react-icons/ci";
+import { IoStar } from "react-icons/io5";
 import { IoMdHeart } from "react-icons/io";
 import { FaRegEye } from "react-icons/fa";
-import { FaEye } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
-import lights from '../../assets/lights.jpg'
+import lights from '@/public/lights.jpg'
 
 const Bestseller = () => {
 return (

@@ -10,7 +10,7 @@ import { FaRegUser } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 
-import navLogo from "@/WhatsApp Image 2025-03-14 at 00.01.10_3d3b88d2.jpg"
+import navLogo from "@/public/logo_white.jpg"
 
 
 const Navbar = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
               <div className='md:hidden text-4xl pt-5 pl-8' onClick={() => setMenuBar(false)}>
                 <RxCross1 className='' />
               </div>
-              <ul className='flex flex-col justify-center items-center  md:flex-row gap-10 mt-10 md:gap-3 lg:gap-5 md:mt-0 text-[13px] md:text-[18]'>
+              <ul className='flex flex-col justify-center items-center  md:flex-row gap-10 mt-10 md:gap-3 lg:gap-5 md:mt-0 text-[16px] md:text-[18]'>
                 <li><Link href="#">Home</Link></li>
                 <li>
                   <select className='outline-none' name="categories" id="">
