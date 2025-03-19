@@ -21,20 +21,19 @@ return (
                         width={200}  
                         height={200} 
                         priority={i < 4} 
-                        quality={100}  
+                        quality={100}
                     />
                 </div>
             ))}
         </div>
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-4 sm:gap-10 mt-6 sm:mt-8">
             <div className="w-full sm:w-1/2">
-                <Image className='w-full object-cover transition-all duration-300 hover:scale-105' 
+                <Image className='w-full min-h-[500px] object-cover transition-all duration-300 hover:scale-105' 
                     src={lights}  
                     alt="floodlight" 
-                    width={500}  
-                    height={500} 
+                    width={500}
                     priority  
-                    quality={100}  
+                    quality={100}
                 />
             </div>
             <div className="w-full sm:w-auto px-3 sm:px-0">
