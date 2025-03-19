@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image"
-import Banner7 from "../../assets/banner7.avif";
+import Banner7 from "@/assets/banner7.avif";
 
 const Banner = () => {
+
   return (
-    <section className=" relative h-screen w-[100vw] object-cover -z-1 pt-10 lg:pt-20 overflow-x-hidden shadow-4xl mx-auto ">
+    <section className="relative h-screen w-[100vw] object-cover -z-1 pt-10 lg:pt-20 overflow-hidden shadow-4xl mx-auto ">
       {/* banner-image */}
-      <Image className="w-full h-auto " alt="banner" src={Banner7} fill={true}  />
+      <Image alt="banner" src={Banner7} fill={true}  />
       <div className="container absolute px-10 lg:px-20 ">
         {/* <div className="absolute bg-black h-[100vh] w-[100vw] -top-20 left-0 opacity-20"></div> */}
         <div className="banner-content lg:max-w-[550px] max-w-[400px] bg-white px-10 lg:px-20 py-6 lg:py-8 mt-16   ">
