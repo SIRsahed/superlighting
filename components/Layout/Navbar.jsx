@@ -10,7 +10,7 @@ import { FaRegUser } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 
-import navLogo from "../../assets/WhatsApp Image 2025-03-14 at 00.01.10_3d3b88d2.jpg"
+import navLogo from "@/WhatsApp Image 2025-03-14 at 00.01.10_3d3b88d2.jpg"
 
 
 const Navbar = () => {
