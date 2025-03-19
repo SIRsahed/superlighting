@@ -3,7 +3,7 @@ import React from 'react'
 const SaleBanner = () => {
   return (
     
-    <section className='sale-banner container px-6 items-center align-middle'>
+    <section className='sale-banner container mx-auto bg-gray-200 py-8 px-6 items-center align-middle'>
 
     <div className="text-center m-5 sm:m-10 px-4 ">
         <div className="">

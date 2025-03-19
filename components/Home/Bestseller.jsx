@@ -13,7 +13,7 @@ const Bestseller = () => {
 return (
         <section className='bestseller container mx-auto px-4 sm:px-6'>
                 <div className="text-center my-6 sm:my-10">
-                        <p className='text-2xl sm:text-3xl font-semibold'>Best Seller</p>
+                        <p className='text-2xl sm:text-3xl sm:text-start text-center font-semibold'>Best Seller</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
                         {Array.from({ length: 6 }).map((_, i) => (
