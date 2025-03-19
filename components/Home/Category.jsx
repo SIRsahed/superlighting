@@ -32,10 +32,10 @@ const Category = () => {
       
       ];
   return (
-    <section className='category py-8 lg:py-12 bg-white'>
+    <section className='category py-8 lg:py-12 px-10 md:px-16'>
         <div className="container">
            
-          <div className='flex items-center justify-between px-20'>
+          <div className='flex items-center justify-between px-10'>
           <h2 className='text-[#2e2e2e] text-2xl md:text-3xl lg:text-4xl underline underline-offset-8 font-bold  '>Categories</h2>
             {/* slider-icon */}
            <div className='flex items-center gap-3'>
