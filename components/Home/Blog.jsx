@@ -1,9 +1,8 @@
 import React from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
-import Image from "next/image";
-import Left from "@/assets/arrow leftpng.png";
-import Right from "@/assets/arrow right.png";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Blog = () => {
   return (
@@ -12,13 +11,12 @@ const Blog = () => {
       <div className="flex items-center justify-between px-4 md:px-10 lg:px-0 ">
         <h1 className="py-5 font-semibold text-[34px] text-[#9DCA42]">Blog</h1>
         <div className="flex gap-2">
-          <Image src={Left} alt="left arrow" width={32} height={32} />
-          <Image src={Right} alt="right arrow" width={32} height={32} />
+          <IoIosArrowBack/>
+          <IoIosArrowForward/>
         </div>
       </div>
 
       {/* Blog Card */}
-
       <div className="lg:flex py-4  justify-between px-4 lg:px-0">
         <div>
           <div className="lg:w-[705px] w-[338px] relative h-[338px] bg-[#A1A1A1] group overflow-hidden flex flex-col justify-between">
@@ -28,13 +26,11 @@ const Blog = () => {
                 <FaRegCalendarAlt />
                 <p>05 June 23</p>
               </div>
-
               <div className="flex items-center pl-5 rounded-sm bg-white w-[150px] p-1 text-[#727272] gap-1">
                 <FaUser />
                 <p>Admin</p>
               </div>
             </div>
-
             {/* READ MORE - Initially Hidden, Shows on Hover */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-all scale-105 duration-300">
               <h1 className="text-white text-xl font-semibold underline">
