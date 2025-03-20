@@ -28,7 +28,7 @@ const CategoryList = () => {
 
   return (
     <div className="w-full">
-      <h2 className="text-2xl font-semibold mb-6">Categories</h2>
+      <h2 className="md:text-2xl text-xl font-semibold mb-6">Categories</h2>
       <div className="">
         {categories.map((category) => (
             <div key={category.name} className="mb-4">
@@ -41,8 +41,8 @@ const CategoryList = () => {
                 : "border-gray-300 text-gray-700 hover:bg-gray-100"
             }`}
           >
-            <h3 className="font-medium text-xl">{category.name}</h3>
-             <span className="text-gray-500 font-medium text-xl">({category.count})</span>
+            <h3 className="font-medium md:text-xl text-base">{category.name}</h3>
+             <span className="text-gray-500 font-medium md:text-xl text-base">({category.count})</span>
           </div>
           {
             selectedCategory === category.name && (
