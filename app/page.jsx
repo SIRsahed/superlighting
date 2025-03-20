@@ -11,14 +11,14 @@ import SaleBanner from "@/components/Home/SaleBanner";
 export default function Home() {
   return (
     <>
-      <Banner/>
-    <Category/>
-      <FeaturedProducts/>
-      <SaleBanner/>
-      <Bestseller/>
-      <ClientSay/>
-      <HomeAbout/>
-      <Blog/>
-          </>
+      <Banner />
+      <Category />
+      <FeaturedProducts />
+      <SaleBanner />
+      <Bestseller />
+      <ClientSay />
+      <HomeAbout />
+      <Blog />
+    </>
   );
 }
