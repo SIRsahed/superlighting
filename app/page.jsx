@@ -1,4 +1,5 @@
 import Banner from "@/components/Home/Banner";
+import Image from "next/image";
 import Bestseller from "@/components/Home/Bestseller";
 import Blog from "@/components/Home/Blog";
 import Category from "@/components/Home/Category";
@@ -10,14 +11,14 @@ import SaleBanner from "@/components/Home/SaleBanner";
 export default function Home() {
   return (
     <>
-      <Banner/>
-      <Category/>
-      <FeaturedProducts/>
-      <SaleBanner/>
-      <Bestseller/>
-      <ClientSay/>
-      <HomeAbout/>
-      <Blog/>
+      <Banner />
+      <Category />
+      <FeaturedProducts />
+      <SaleBanner />
+      <Bestseller />
+      <ClientSay />
+      <HomeAbout />
+      <Blog />
     </>
   );
 }
