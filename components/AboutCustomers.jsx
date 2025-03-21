@@ -63,11 +63,11 @@ const AboutCustomers = () => {
                     </div>
                     <div className='absolute left-60'>
                     <p className='text-xs lg:text-sm'>Trusted by</p>
-                    <span className='text-xs lg:text-sm font-bold'>1.000+ Customers</span>
+                    <span className='text-xs lg:text-sm font-semibold'>1.000+ Customers</span>
                     </div>
             </div>
             </div>
-            <div className=''>
+          
             <div className="">
               <h3 className='text-lg font-semibold'>Superlightbd, Your Home Stylist</h3>
               <p className="text-xs font-normal lg:text-base my-5">
@@ -77,7 +77,7 @@ const AboutCustomers = () => {
 
             </div>
             </div>
-            </div>
+          
           </div>
         </div>
       </section>
