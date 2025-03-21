@@ -18,7 +18,7 @@ const AboutHero = () => {
         </div>
         {/* right-side */}
         <div className='rounded-lg'>
-        <Image className="max-w-full " src={AboutHero2} alt="aboutImage"  />
+        <Image className="max-w-full hover:scale-110 transition-all duration-700 ease-in-out" src={AboutHero2} alt="aboutImage"  />
 
         </div>
       </div>

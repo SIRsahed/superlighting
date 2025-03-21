@@ -46,7 +46,7 @@ const AboutCustomers = () => {
               Illuminate your home with modern, stylish, and energy-saving
               lighting solutions designed to match your unique taste."{" "}
             </p>
-            <div>
+            <div className="hover:scale-105 transition-all duration-700 ease-in-out">
               <Image
                 className="max-w-full max-h-80 "
                 src={AboutCustomer}
