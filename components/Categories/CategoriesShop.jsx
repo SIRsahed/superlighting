@@ -5,9 +5,48 @@ import { FaCartPlus } from "react-icons/fa6";
 import { FaRegEye, FaRegHeart } from "react-icons/fa";
 
 const CategoriesShop = ({item}) => {
+  const icon =[
+    {
+      id: 1,
+      icon: <IoStar />
+    },
+    {
+      id: 2,
+      icon: <IoStar />
+    },
+    {
+      id: 3,
+      icon: <IoStar />
+    },
+    {
+      id: 4,
+      icon: <IoStar />
+    },
+    {
+      id: 5,
+      icon: <IoStar />
+    }
+  ]
+  const hoverIcon = [
+    {
+      id: 1,
+      icon: <FaCartPlus />
+    },
+    {
+      id: 2,
+      icon: <FaRegHeart />
+    },
+    {
+      id: 3,
+      icon: <FaRegHeart />
+    },
+    {
+      id: 4,
+      icon: <FaRegEye />
+    }
+  ]
   return (
     <div className="mt-5">
-      {/* Image Section */}
       <div className="relative group">
         <Image
           src={item.image}
@@ -17,16 +56,10 @@ const CategoriesShop = ({item}) => {
           layout="responsive"
           className="rounded-lg w-full h-auto"
         />
-        {/* Hover Icons */}
         <div className="flex absolute bottom-4 left-1/2 -translate-x-1/2 space-x-3 opacity-0 group-hover:opacity-100 transition duration-300">
-          {[
-            { icon: <FaCartPlus /> },
-            { icon: <FaRegHeart />},
-            { icon: <FaRegHeart />},
-            { icon: <FaRegEye />},
-          ].map((item, index) => (
+          {hoverIcon.map((item) => (
             <div
-              key={index}
+              key={item.id}
               className={`w-12 h-12 flex items-center justify-center bg-white rounded-lg shadow-lg cursor-pointer hover:bg-black hover:text-white transition`}
             >
               {item.icon}
@@ -34,16 +67,20 @@ const CategoriesShop = ({item}) => {
           ))}
         </div>
       </div>
-
-      {/* Content Section */}
       <div className="text-center mt-4">
-        <h3 className="text-lg font-semibold">{item.title}</h3>
-        <div className="flex items-center justify-center space-x-1 text-yellow-500 mt-1">
-          {Array(5).fill(<IoStar className="w-5 h-5" />)}
-        <p className="text-sm text-gray-500 mt-1">{item.reviews}(Reviews)</p>
+        <h3 className="md:text-xl text-[18px] font-semibold">{item.title}</h3>
+        <div className="flex text-[18px] items-center justify-center space-x-1 text-yellow-500 mt-1">
+          {
+            icon.map((item)=>(
+              <div key={item.id} className="w-5 h-5">
+                {item.icon}
+              </div>
+            ))
+          }
+        <p className="text-sm text-gray-500 mt-1">({item.reviews} Reviews)</p>
         </div>
-        <p className="text-xl font-bold text-gray-900 mt-2">
-          ${item.price} <span className="text-gray-400 line-through text-sm ml-2">${item.discount}</span>
+        <p className="md:text-xl text-[18px] font-semibold text-gray-900 mt-2">
+          ${item.price} <span className="text-gray-400 line-through text-sm md:ml-1">${item.discount}</span>
         </p>
       </div>
     </div>

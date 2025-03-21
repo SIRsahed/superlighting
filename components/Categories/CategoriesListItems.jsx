@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import CategoryList from "./CategoryList";
-import FilterSidebar from "./FilterSidebar";
+const CategoryList = dynamic(() => import("@/components/Categories/CategoryList"));
+const FilterSidebar = dynamic(() => import("@/components/Categories/FilterSidebar"));
+import dynamic from "next/dynamic";
 
 const CategoriesListItems = () => {
   const [isOpen, setIsOpen] = useState(false);

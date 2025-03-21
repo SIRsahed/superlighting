@@ -1,13 +1,11 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
-import CategoriesShop from './CategoriesShop'
-const CategoryList =dynamic(()=>import('@/components/Categories/CategoryList'))
-const FilterSidebar =dynamic(()=>import('@/components/Categories/FilterSidebar'))
+const CategoriesShop = dynamic(()=> import('@/components/Categories/CategoriesShop'))
+const CategoriesShort = dynamic(()=> import('@/components/Categories/CategoriesShort'))
+const CategoriesListItems = dynamic(()=> import('@/components/Categories/CategoriesListItems'))
 import shop1 from '@/assets/shop1.png'
 import shop2 from '@/assets/shop2.png'
 import shop3 from '@/assets/shop3.png'
-import CategoriesShort from './CategoriesShort'
-import CategoriesListItems from './CategoriesListItems'
 const CategoriesItems = () => {
   const shop = [
     {
@@ -129,7 +127,7 @@ const CategoriesItems = () => {
                 </div>
                 <div className="">
                   <CategoriesShort/>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {
                     shop.map((item)=>(
                       <CategoriesShop key={item.id} item={item}/>
