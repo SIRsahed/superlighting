@@ -27,10 +27,10 @@ const Mission = () => {
     ]
   return (
     <section className='py-10'>
-      <div className="container mx-auto px-10">
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 mb-5 '>
+      <div className="container mx-auto">
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 mb-5 px-5'>
             { missionInfo.map((item,index)=>(
-                <div key={index} className='card px-4 lg:px-7 py-5 border-1 border-green-700 rounded-sm hover:shadow-2xl hover:shadow-gray-600 hover:translate-x-2 transition-all duration-700 ease-in-out'>
+                <div key={index} className='card px-4 lg:px-7 py-5 rounded-sm shadow-xl hover:shadow-gray-300  hover:scale-105 transition-all duration-700 ease-in-out'>
                    <Image src={item.icon} alt="image" width={50} height={50}/>
                 <h4 className='text-sm font-semibold my-4'>{item.title}</h4>
                 <p className='text-xs md:text-sm'>{item.description}</p>
