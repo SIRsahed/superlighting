@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className='container mx-auto px-5 md:py-3  md:px-0'>
         <div className='flex justify-between items-center'>
           <div className='flex items-center gap-5 lg:gap-10 overflow-hidden'>
-            <div className='flex items-center'>
+            <div className='flex items-center justify-between'>
               <IoMdMenu onClick={MenuHandel} className='text-4xl md:hidden' />
               <Image className='w-22 md:w-36' src={navLogo} alt='Nav Logo Image' />
             </div>
@@ -79,56 +79,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-
-        {/* mobile Design  */}
-        {/* <div className={menubar ? ' fixed right-0 top-0 w-[100%] md:hidden h-screen bg-black text-white px-10 ease-in duration-700  ' : 'fixed right-[-100%] top-0 p-1  ease-in duration-500'}>
-          <div className='text-4xl pt-5' onClick={()=> setMenuBar(false)}>
-              <RxCross1 className='' />
-          </div>
-          <div className='flex flex-col gap-6 w-[60%] h-full items-start my-8 '>
-            <div className='flex items-center px-2 py-1 rounded-xl text-black bg-gradient-to-r from-[#bcef43] via-[#84cc16] to-[#87d24d]'>
-            <input className='border-none outline-none  ' type="text" placeholder='Search' />
-            <IoSearchOutline className='text-white text-2xl hover:text-green-500'  />
-            </div>
-            <ul className='flex flex-col gap-8'>
-              <Link href="#">
-                <li>Home</li>
-              </Link>
-              <li>
-                <select className='bg-black outline-none' name="categories" id="">
-                  <option value="select one">categories</option>
-                  <option value="Home" id='home'>Home</option>
-                  <option value="outdor" id='outdor'>outdor</option>
-                  <option value="indor" id='indor'>Indor</option>
-                  <option value="reading" id='reading'>Reading</option>
-                </select>
-              </li>
-              <Link href="#">
-                <li>Best Sellers</li>
-              </Link>
-              <Link href="#">
-                <li>Services</li>
-              </Link>
-              <Link href="#">
-                <li>About Us</li>
-              </Link>
-              <Link href="#">
-                <li>Contact</li>
-              </Link>
-            </ul>
-            <div className='flex gap-2 text-xl md:text-2xl'>
-              <div className='hover:bg-green-400 rounded-full px-2 py-2'>
-                <CiHeart />
-              </div>
-              <div className='hover:bg-green-400 rounded-full px-2 py-2'>
-                <FaRegUser />
-              </div>
-              <div className='hover:bg-green-400 rounded-full px-2 py-2'>
-                <FiShoppingCart />
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   )
