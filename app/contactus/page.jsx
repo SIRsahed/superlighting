@@ -1,10 +1,10 @@
+import Googlmap from '@/components/Contactus/Googlmap'
 import React from 'react'
-import googlemap from '@/components/Contactus/googlemap'
 
 const page = () => {
   return (
     <>
-     <googlemap />
+     <Googlmap />
     </>
   )
 }
