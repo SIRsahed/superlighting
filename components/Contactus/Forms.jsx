@@ -8,13 +8,13 @@ import { FaRegClock } from "react-icons/fa";
 const Forms = () => {
     return (
         <section className="contact-form py-12 px-4">
-            <div className="container w-full mx-auto flex flex-col md:flex-row gap-8">
+            <div className="container w-full mx-auto flex flex-col md:flex-row gap-8 items-center">
                 
                 
-                <div className="w-full md:w-1/2 flex flex-col gap-6">
+                <div className="w-full md:w-1/2 flex flex-col gap-6  ">
                         <div  className="flex gap-4 items-center">
-                            <div className="icon">
-                                <IoLocationOutline size={45} />
+                            <div className="icon ">
+                                <IoLocationOutline className='!text-[200px]' size={45} />
                             </div>
                             <div className="icon-words w-full md:w-1/2">
                                 <h2 className="font-bold">Store Address</h2>
@@ -48,8 +48,6 @@ const Forms = () => {
                                 <p>24-hour (Monday - Sunday)</p>
                             </div>
                         </div>
-                    
-
                 </div>
 
                 
@@ -62,21 +60,21 @@ const Forms = () => {
 
                         
                         <div className="flex flex-col md:flex-row p-4 gap-4">
-                            <input type="text" name="name" placeholder="Name*" 
+                            <input type="text" name="name" aria-label='name' placeholder="Name*" 
                                    className="border-2 border-gray-200 p-3 w-full" />
-                            <input type="phone" name="phone" placeholder="Phone Number*" 
-                                   className="border-2 border-gray-200 p-3 w-full" />
-                        </div>
-
-                        
-                        <div className="p-4 w-full">
-                            <input type="email" name="email" placeholder="Email *" 
+                            <input type="phone" name="phone" aria-label='phone' placeholder="Phone Number*" 
                                    className="border-2 border-gray-200 p-3 w-full" />
                         </div>
 
                         
                         <div className="p-4 w-full">
-                            <textarea name="message" id="message" placeholder="Message*" 
+                            <input type="email" name="email" aria-label='email' placeholder="Email *" 
+                                   className="border-2 border-gray-200 p-3 w-full" />
+                        </div>
+
+                        
+                        <div className="p-4 w-full">
+                            <textarea name="message" id="message" aria-label='message' placeholder="Message*" 
                                       className="border-2 border-gray-300 p-4 w-full h-32"></textarea>
                         </div>
 
@@ -88,7 +86,7 @@ const Forms = () => {
                                     I have read and agree
                                 </label>
                             </div>
-                            <button className="bg-black text-white p-3 w-full md:w-auto">Submit</button>
+                            <button className="bg-black text-white p-3 w-full md:w-auto" type='submit'>Submit</button>
                         </div>
 
                     </form>
