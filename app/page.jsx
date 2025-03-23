@@ -7,7 +7,6 @@ import ClientSay from "@/components/Home/ClientSay";
 import FeaturedProducts from "@/components/Home/FeaturedProducts";
 import HomeAbout from "@/components/Home/HomeAbout";
 import SaleBanner from "@/components/Home/SaleBanner";
-import ImagePrice from "@/components/ProductDescription/ImagePrice";
 
 export default function Home() {
   return (
@@ -19,7 +18,7 @@ export default function Home() {
       <Bestseller />
       <ClientSay />
       <HomeAbout />
-      <Blog /> 
+      <Blog />
     </>
   );
 }
