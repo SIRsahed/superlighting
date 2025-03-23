@@ -17,9 +17,9 @@ const Footer = () => {
   return (
     <footer className="py-10">
       <div className=" container mx-auto ">
-        <div className="lg:flex justify-between  ">
+        <div className="lg:flex gap-12 ">
           <div className="lg:px-0 px-5  ">
-            <p className="text-[#727272] text-[16px]  mx-auto lg:mx-0">
+            <p className="text-[#727272] text-[16px]   ">
               The smartest guide to decorating kitchen cabinets to help optimize
               the area of family kitchen space.
             </p>
@@ -28,7 +28,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full lg:w-[300px] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9DCA42] transition-all  shadow-sm"
+                className="w-full lg:w-[250px] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9DCA42] transition-all  shadow-sm"
               />
               <button className="bg-[#9DCA42] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#87b32f] hover:scale-105 hover:shadow-md transition-all">
                 SUBMIT
@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
 
             {/* Underline for Social Media Icons */}
-            <div className="w-full max-w-[453px] h-[2px] bg-[#9DCA42] -mt-2"></div>
+            <div className="w-full max-w-[400px] h-[2px] bg-[#9DCA42] -mt-2"></div>
 
             {/* Copyright Section */}
             <div className=" mt-8 text-gray-600 text-[16px] ">
@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <div className="space-y-4 lg:px-0 px-5 lg:pt-0 pt-10">
+            <div className="space-y-4 lg:px-0 px-5 lg:pt-0  pt-10">
               <h1 className="text-[#9DCA42] font-semibold text-[16px] ">
                 Customer Service
               </h1>
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <div className="space-y-4 lg:px-0 px-5 lg:pt-0 pt-10">
+            <div className="space-y-4  lg:px-0 px-5 lg:pt-0 pt-10">
               <h1 className="text-[#9DCA42] font-semibold text-[16px] ">
                 About Us
               </h1>
@@ -99,7 +99,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <div className="space-y-4 lg:px-0 px-5 lg:pt-0 pt-10">
+            <div className="space-y-4 lg:px-0  px-5 lg:pt-0 pt-10">
               <h1 className="text-[#9DCA42] font-semibold text-[16px] ">
                 Contact Us
               </h1>
