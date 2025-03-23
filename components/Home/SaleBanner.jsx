@@ -1,11 +1,11 @@
 import React from 'react'
 
 const SaleBanner = () => {
-  return (
 
-    <section className='bg-gray-200 py-8 px-6 items-center align-middle'>
+  return (
+    <section className='bg-gray-200 py-8 mt-8 lg:mt-24 lg:px-6 items-center align-middle'>
       <div className="container mx-auto">
-        <div className="text-center m-5 sm:m-10 px-4 ">
+        <div className="text-center m-5 sm:m-10 px-4">
           <div className="">
             <p className=' lg:text-2xl sm:text-xl'>Every Products For 7 Days</p>
           </div>
@@ -22,4 +22,4 @@ const SaleBanner = () => {
   )
 }
 
-export default SaleBanner
+export default SaleBanner;

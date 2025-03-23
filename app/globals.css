@@ -1,16 +1,13 @@
 @import "tailwindcss";
-body{
-   box-sizing: border-box;
 
+body {
+  box-sizing: border-box;
 }
- .container{
-    max-width: 1120px;
-    margin: 0 auto;
- }
- button{
-   cursor: pointer;
- }
- svg{
-   width: 20px;
-   height: 20px
- }
+
+.container {
+  max-width: 1320px;
+}
+
+button {
+  cursor: pointer;
+}
