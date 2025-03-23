@@ -3,6 +3,7 @@
 body {
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 .container {
   max-width: 1320px;
@@ -11,3 +12,10 @@ body {
 button {
   cursor: pointer;
 }
+=======
+ .container{
+    max-width: 1120px;
+    margin: 0 auto;
+ }
+
+>>>>>>> 30a07f0312b5b7480ced702ed59ab331694182da
