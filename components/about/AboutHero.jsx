@@ -2,6 +2,7 @@ import React from 'react'
 import Image from "next/image"
 import AboutHero2 from "@/public/aboutHero2.avif";
 const AboutHero = () => {
+  
   return (
     <section className="py-10">
     <div className="container mx-auto px-5">
