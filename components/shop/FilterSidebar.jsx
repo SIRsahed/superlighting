@@ -1,6 +1,6 @@
 
 import React from "react";
-import thank from '@/assets/thank.png'
+import thank from '@/public/thank.png'
 import Image from "next/image";
 
 const FilterSidebar = () => {

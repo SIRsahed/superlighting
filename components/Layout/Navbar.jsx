@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav>
+    <nav className='bg-white'>
       <div className='container mx-auto px-5  md:px-0'>
         <div className='flex justify-between items-center'>
           <div className='flex justify-between items-center gap-5 lg:gap-10 overflow-hidden'>
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <li><Link href="/about-us">About us</Link></li>
                 <li><Link href="/shop">Shop</Link></li>
                 <li><Link href="/services">Services</Link></li>
-                <li><Link href="#">Contact</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
               </ul>
             </div>
           </div>

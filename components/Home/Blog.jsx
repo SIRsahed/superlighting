@@ -14,7 +14,7 @@ const Blog = () => {
           <h1 className="py-5 font-semibold text-[34px] text-[#9DCA42]">Blog</h1>
           <div className="flex items-center gap-2">
             <IoIosArrowBack className="text-2xl"/>
-            <IoIosArrowForward />
+            <IoIosArrowForward className="text-2xl"/>
           </div>
         </div>
 

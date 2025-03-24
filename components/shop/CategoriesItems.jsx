@@ -1,11 +1,11 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
-const CategoriesShop = dynamic(()=> import('@/components/Categories/CategoriesShop'))
-const CategoriesShort = dynamic(()=> import('@/components/Categories/CategoriesShort'))
-const CategoriesListItems = dynamic(()=> import('@/components/Categories/CategoriesListItems'))
-import shop1 from '@/assets/shop1.png'
-import shop2 from '@/assets/shop2.png'
-import shop3 from '@/assets/shop3.png'
+const CategoriesShop = dynamic(()=> import('@/components/shop/CategoriesShop'))
+const CategoriesShort = dynamic(()=> import('@/components/shop/CategoriesShort'))
+const CategoriesListItems = dynamic(()=> import('@/components/shop/CategoriesListItems'))
+import shop1 from '@/public/shop1.png'
+import shop2 from '@/public/shop2.png'
+import shop3 from '@/public/shop3.png'
 const CategoriesItems = () => {
   const shop = [
     {
@@ -54,7 +54,7 @@ const CategoriesItems = () => {
       stars: 4,
     },
     {
-      id: 5,
+      id: 6,
       title: "Office Desk",
       price: 850,
       image: shop1,

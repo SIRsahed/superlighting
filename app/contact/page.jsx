@@ -1,5 +1,5 @@
-import Forms from '@/components/Contactus/Forms'
-import Googlmap from '@/components/Contactus/Googlmap'
+import Forms from '@/components/contact/Forms'
+import Googlmap from '@/components/contact/Googlmap'
 import React from 'react'
 
 const page = () => {

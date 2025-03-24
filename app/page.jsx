@@ -1,12 +1,12 @@
-import Banner from "@/components/Home/Banner";
+import Banner from "@/components/home/Banner";
 import Image from "next/image";
-import Bestseller from "@/components/Home/Bestseller";
-import Blog from "@/components/Home/Blog";
-import Category from "@/components/Home/Category";
-import ClientSay from "@/components/Home/ClientSay";
-import FeaturedProducts from "@/components/Home/FeaturedProducts";
-import HomeAbout from "@/components/Home/HomeAbout";
-import SaleBanner from "@/components/Home/SaleBanner";
+import Bestseller from "@/components/home/Bestseller";
+import Blog from "@/components/home/Blog";
+import Category from "@/components/home/Category";
+import ClientSay from "@/components/home/ClientSay";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import HomeAbout from "@/components/home/HomeAbout";
+import SaleBanner from "@/components/home/SaleBanner";
 
 export default function Home() {
   return (
