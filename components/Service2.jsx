@@ -1,21 +1,22 @@
 import React from 'react'
 import Image from "next/image"
-import ServiceImage1 from "@/public/ServiceImage1.avif";
-import ServiceImage2 from "@/public/ServiceImage2.avif";
-import ServiceImage3 from "@/public/ServiceImage3.avif";
+import StreetLighting from "@/public/streetLighting.avif";
+import GardenLighting from "@/public/gardenLighting1.avif";
+import BuildingLighting from "@/public/buildingLighting.avif";
 const Service2 = () => {
-  const serviceOne = [
+
+  const serviceTwo = [
     {
-      image: ServiceImage1,
-      info : "Interior Lighting Solutions",
+      image: StreetLighting,
+      info : "Street Lighting",
     },
     {
-      image: ServiceImage2,
-      info : "Interior Lighting Solutions",
+      image: GardenLighting,
+      info : "Garden & Landscape Lighting",
     },
     {
-      image: ServiceImage3,
-      info : "Interior Lighting Solutions",
+      image: BuildingLighting,
+      info : "Building Facade Lighting",
     },
 ]
 
@@ -23,9 +24,9 @@ const Service2 = () => {
   return (
     <section className='py-10'>
       <div className="container mx-auto">
-        <h2 className='text-2xl md:text-3xl font-bold underline underline-offset-8 text-cen pb-10'>Our Services</h2>
+        <h2 className='text-lg md:text-xl font-semibold  underline underline-offset-8 text-cen pb-10'>Outdoor Lighting Solutions</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-          { serviceOne.map((item,index)=>(
+          { serviceTwo.map((item,index)=>(
             <div key={index} className='card'>
               <Image className='w-100 h-60 hover:scale-110 transition duration-700 mb-3 ' src={item.image} alt='ServiceImage1'/>
               <h3>{item.info}</h3>
