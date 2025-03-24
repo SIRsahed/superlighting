@@ -1,7 +1,7 @@
-import AboutCustomers from '@/components/about/AboutCustomers'
-import AboutHero from '@/components/about/AboutHero'
-import Article from '@/components/about/Article'
-import Mission from '@/components/about/Mission'
+import AboutCustomers from '@/components/About/AboutCustomers'
+import AboutHero from '@/components/About/AboutHero'
+import Article from '@/components/About/Article'
+import Mission from '@/components/About/Mission'
 import React from 'react'
 
 const page = () => {

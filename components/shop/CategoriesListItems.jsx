@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-const CategoryList = dynamic(() => import("@/components/shop/CategoryList"));
-const FilterSidebar = dynamic(() => import("@/components/shop/FilterSidebar"));
+const CategoryList = dynamic(() => import("@/components/Shop/CategoryList"));
+const FilterSidebar = dynamic(() => import("@/components/Shop/FilterSidebar"));
 import dynamic from "next/dynamic";
 
 const CategoriesListItems = () => {
