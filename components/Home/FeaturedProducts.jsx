@@ -33,9 +33,6 @@ const FeaturedProducts = () => {
                         <Image className='w-full lg:min-h-[500px] object-cover'
                             src={lights}
                             alt="floodlight"
-                            width={500}
-                            priority
-                            quality={100}
                         />
                     </div>
                     <div className="w-full sm:w-auto px-3 sm:px-0">

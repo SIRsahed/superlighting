@@ -10,7 +10,7 @@ const SaleBanner = () => {
             <p className=' lg:text-2xl sm:text-xl'>Every Products For 7 Days</p>
           </div>
           <div className="lg:text-4xl sm:text-2xl font-bold text-center mt-5 mb-10 ">
-            <h2>Up To 50%</h2>
+            <h2>Up To 40%</h2>
             <h2>Off Final Sale Products</h2>
           </div>
           <div className="mt-5">
