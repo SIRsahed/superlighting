@@ -1,5 +1,4 @@
 import Banner from "@/components/home/Banner";
-import Image from "next/image";
 import Bestseller from "@/components/home/Bestseller";
 import Blog from "@/components/home/Blog";
 import Category from "@/components/home/Category";
