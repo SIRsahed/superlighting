@@ -1,9 +1,13 @@
 @import "tailwindcss";
-/* body{
-    box-sizing: border-box;
- 
- }
-  .container{
-     max-width: 1120px;
-     margin: 0 auto;
-  } */
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+}
+
+button {
+  cursor: pointer;
+}
