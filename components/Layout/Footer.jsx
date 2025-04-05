@@ -1,153 +1,78 @@
 import React from "react";
-import Image from "next/image";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaPinterest } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
-import { BiPhoneCall } from "react-icons/bi";
-import { CiMail } from "react-icons/ci";
-import { CiClock2 } from "react-icons/ci";
-import Bkash from "@/public/bkash_logo.png";
-import Nagad from "@/public/nagad.png";
-import Rocket from "@/public/rocket.png";
+import Link from "next/link";
+import { IoCallOutline, IoMailOpenOutline } from "react-icons/io5";
+
 
 const Footer = () => {
   return (
-    <footer className="py-10">
-      <div className=" container mx-auto ">
-        <div className="lg:flex justify-between  ">
-          <div className="lg:px-0 px-5  ">
-            <p className="text-[#727272] text-[16px]  mx-auto lg:mx-0">
+    <footer className="pt-8 lg:pt-14">
+      <div className="container mx-auto">
+        <div className="grid lg:grid-cols-[2fr_1fr_1fr_1fr] gap-5">
+          <div className="lg:mr-20">
+            <p className="text-[#727272] text-[16px]">
               The smartest guide to decorating kitchen cabinets to help optimize
               the area of family kitchen space.
             </p>
-
             <div className="flex flex-col lg:flex-row gap-3 mt-5 justify-center lg:justify-start">
               <input
                 type="email"
                 placeholder="Enter your email"
                 className="w-full lg:w-[300px] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9DCA42] transition-all  shadow-sm"
               />
-              <button className="bg-[#9DCA42] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#87b32f] hover:scale-105 hover:shadow-md transition-all">
+              <button className="bg-[#9DCA42] text-white px-6 py-2 rounded-lg font-semibold">
                 SUBMIT
               </button>
             </div>
 
             {/* Social Media Icons */}
-            <div className="flex   justify-center lg:justify-start py-6 gap-4 text-6xl">
-              <FaSquareFacebook className="text-[#727272] hover:scale-110 hover:text-[#9DCA42] transition-all duration-300 cursor-pointer" />
+            <div className="flex justify-center lg:justify-start py-6 gap-4 text-3xl border-b-2 border-[#9DCA42]">
+              <Link href="https://www.facebook.com/profile.php?id=100090851693362" target="_blank">
+                <FaSquareFacebook className="text-[#727272] hover:scale-110 hover:text-[#9DCA42] transition-all duration-300 cursor-pointer" />
+              </Link>
               <IoLogoInstagram className="text-[#727272] hover:scale-110 hover:text-[#9DCA42] transition-all duration-300 cursor-pointer" />
               <FaPinterest className="text-[#727272] hover:scale-110 hover:text-[#9DCA42] transition-all duration-300 cursor-pointer" />
               <AiFillTwitterCircle className="text-[#727272] hover:scale-110 hover:text-[#9DCA42] transition-all duration-300 cursor-pointer" />
               <FaTiktok className="text-[#727272] hover:scale-110 hover:text-[#9DCA42] transition-all duration-300 cursor-pointer" />
             </div>
-
-            {/* Underline for Social Media Icons */}
-            <div className="w-full max-w-[453px] h-[2px] bg-[#9DCA42] -mt-2"></div>
-
-            {/* Copyright Section */}
-            <div className=" mt-8 text-gray-600 text-[16px] ">
-              <p>
-                © 2025 <span className="font-semibold">SuperLightingBD</span>.
-                Designed by
-                <a
-                  href="https://yourwebsite.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#9DCA42] hover:underline ml-1"
-                >
-                  FakeCompany.com
-                </a>
-              </p>
-            </div>
           </div>
 
-          <div>
-            <div className="space-y-4 lg:px-0 px-5 lg:pt-0 pt-10">
-              <h1 className="text-[#9DCA42] font-semibold text-[16px] ">
-                Customer Service
-              </h1>
-              <h3 className="text-[#727272] text-[16px] pt-3">My Account</h3>
-              <h3 className="text-[#727272] text-[16px]">Payments</h3>
-              <h3 className="text-[#727272] text-[16px]">Term of Use</h3>
-              <h3 className="text-[#727272] text-[16px]">
-                Deliveries & Returns
-              </h3>
-              <h3 className="text-[#727272] text-[16px]">Gift Card</h3>
-              <h3 className="text-[#727272] text-[16px]">
-                Refund & Returns Policy
-              </h3>
-              <h3 className="text-[#727272] text-[16px]">FAQs</h3>
-            </div>
+          <div className="">
+            <ul className="flex flex-col gap-2">
+              <li className="text-[#9DCA42] font-semibold text-[16px] pb-2">About us</li>
+              <li className="text-[#727272] text-[16px]"><Link href="/about-us">Our Story</Link></li>
+              <li className="text-[#727272] text-[16px]"><Link href="/jobs">Job Opportunities</Link></li>
+              <li className="text-[#727272] text-[16px]"><Link href="/about-us">Store Locator</Link></li>
+              <li className="text-[#727272] text-[16px]"><Link href="/about-us">Contact Us</Link></li>
+            </ul>
           </div>
 
-          <div>
-            <div className="space-y-4 lg:px-0 px-5 lg:pt-0 pt-10">
-              <h1 className="text-[#9DCA42] font-semibold text-[16px] ">
-                About Us
-              </h1>
-              <h3 className="text-[#727272] text-[16px] pt-3">Product</h3>
-              <h3 className="text-[#727272] text-[16px]">Our Story</h3>
-              <h3 className="text-[#727272] text-[16px]">Job Opportunities</h3>
-              <h3 className="text-[#727272] text-[16px]">Store Locator</h3>
-              <h3 className="text-[#727272] text-[16px]">Blog</h3>
-              <h3 className="text-[#727272] text-[16px]">Reviews</h3>
-              <h3 className="text-[#727272] text-[16px]">Trending Search</h3>
-            </div>
+          <div className="">
+            <ul className="flex flex-col gap-2">
+              <li className="text-[#9DCA42] font-semibold text-[16px] pb-2">Customer Service</li>
+              <li className="text-[#727272] text-[16px]"><Link href="/myaccount">My Account</Link></li>
+              <li className="text-[#727272] text-[16px]"><Link href="/terms">Term of Use</Link></li>
+              <li className="text-[#727272] text-[16px]"><Link href="/return-policy">Deliveries & Returns</Link></li>
+              <li className="text-[#727272] text-[16px]"><Link href="/about-us">Contact</Link></li>
+            </ul>
           </div>
 
-          <div>
-            <div className="space-y-4 lg:px-0 px-5 lg:pt-0 pt-10">
-              <h1 className="text-[#9DCA42] font-semibold text-[16px] ">
-                Contact Us
-              </h1>
-              <div className="text-[#727272]   pt-3 flex items-center gap-2">
-                <IoLocationOutline />
-                <h3 className="text-[#727272] text-[16px]  ">
-                  House: 110, Road: 02, Block: D, Pallabi 2nd Project, Rupnagar,
-                  Mirpur
-                </h3>
-              </div>
-              <div className="text-[#727272] pt-3 flex items-center gap-2">
-                <BiPhoneCall />
-                <h3 className="text-[#727272] text-[16px] ">
-                  +880 1724-188240
-                </h3>
-              </div>
-              <div className="text-[#727272] pt-3 flex items-center gap-2">
-                <CiMail />
-                <h3 className="text-[#727272] text-[16px] ">
-                  superlightingbd1@gmail.com
-                </h3>
-              </div>
-
-              <h1 className="text-[#2E2E2E] text-[16px] font-semibold pt-10">
-                Service Time
-              </h1>
-
-              <div className="text-[#727272]  pt-3 flex items-center gap-2">
-                <CiClock2 />
-
-                <h3 className="text-[#727272] text-[16px] ">
-                  24-hour (Monday - Sunday)
-                </h3>
-              </div>
-
-              <div className="flex gap-3 pt-5">
-                <div className="flex justify-center items-center w-[35px] h-[22px] ">
-                  <Image alt="bkashlogo" src={Bkash}></Image>
-                </div>
-                <div className="flex justify-center items-center w-[35px] h-[22px] ">
-                  <Image alt="nagadlogo" src={Nagad}></Image>
-                </div>
-                <div className="flex justify-center items-center w-[35px] h-[22px] ">
-                  <Image alt="rocketlogo" src={Rocket}></Image>
-                </div>
-              </div>
-            </div>
+          <div className="">
+            <ul className="flex flex-col gap-2">
+              <li className="text-[#9DCA42] font-semibold text-[16px] pb-2">Get In Touch</li>
+              <li className="text-[#727272] flex items-center gap-2"><Link href="/about-us">House: 110, Road: 02, Block: D, Pallabi 2nd Project, Rupnagar, Mirpur</Link></li>
+              <li className="text-[#727272] text-[16px] flex gap-2 items-center"><span><IoCallOutline/></span><a href="callto:+8801724188240">+880 1724-188240</a></li>
+              <li className="text-[#727272] text-[16px] flex items-center gap-2"><span><IoMailOpenOutline/></span><a href="mailto:superlightingbd1@gmail.com">superlightingbd1@gmail.com</a></li>
+            </ul>
           </div>
+        </div>
+        <div className="flex lg:flex-row flex-col gap-3 lg:gap-0 justify-between lg:items-center py-5 mt-10">
+          <p>&copy; Super Lighting BD - All rights reserved</p>
+          <p>Design and developed by <Link href="https://mernsahed.netlify.app" target="_blank" className="font-bold text-[#9DCA42] underline">Md. Sahed Rahman</Link> and his team.</p>
         </div>
       </div>
     </footer>

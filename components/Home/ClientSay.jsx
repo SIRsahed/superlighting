@@ -27,11 +27,11 @@ const ClientSay = () => {
     ]
 
     return (
-        <section className='pt-8 lg:pt-24'>
+        <section className='py-8 lg:py-14'>
             <div className="container mx-auto">
                 <div className="px-5 lg:px-0">
-                    <h2 className='text-[#2e2e2e] text-2xl md:text-3xl lg:text-4xl underline underline-offset-8 font-bold'>What Our Clients Say</h2>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center lg:py-16 py-8'>
+                    <h2 className='text-[#2e2e2e] text-2xl md:text-3xl underline font-bold'>What Our Clients Say</h2>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center lg:py-10 py-8'>
                         {ClientSays.map((item, i) => (
                             <div key={i} className='border-1 border-gray-700 px-5 py-5 lg:px-8 lg:py-6 rounded-md'>
                                 <div className='flex items-center gap-3 mt-5  '>
@@ -47,11 +47,10 @@ const ClientSay = () => {
                                             <Image src={Star} alt='star icon' />
                                             <Image src={Star} alt='star icon' />
                                             <Image src={Star} alt='star icon' />
-
                                         </div>
                                     </div>
                                 </div>
-                                <p className='text-xs py-5  text-left'>{item.say} </p>
+                                <p className='text-sm py-5  text-left'>{item.say} </p>
                             </div>
                         ))
                         }

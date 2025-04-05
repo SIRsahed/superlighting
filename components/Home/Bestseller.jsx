@@ -9,7 +9,7 @@ import lights from '@/public/lights.jpg'
 const Bestseller = () => {
 
         return (
-                <section className='pt-8 lg:pt-24 px-4 sm:px-6'>
+                <section className='py-8 lg:py-14'>
                         <div className="container mx-auto">
                                 <div className="text-center my-6 sm:my-10">
                                         <p className='text-2xl sm:text-3xl sm:text-start text-center font-semibold underline'>Best Seller</p>

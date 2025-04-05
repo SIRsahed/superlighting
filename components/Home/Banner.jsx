@@ -6,14 +6,14 @@ import Link from "next/link";
 const Banner = () => {
 
   return (
-    <section className="relative py-[150px] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:content-[''] after:bg-black after:-z-10 after:opacity-20">
+    <section className="relative py-[170px] mb-12 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:content-[''] after:bg-black after:-z-10 after:opacity-30">
       <Image
         className="object-cover w-full h-full -z-10"
         src={Banner7}
         layout="fill"
         alt="Super Light BD Banner" />
       <div className="container mx-auto">
-        <div className="banner-content lg:max-w-[50%] max-w-[90%] bg-white backdrop-blur-md px-12 py-8">
+        <div className="lg:max-w-[50%] max-w-[90%] bg-white mx-auto rounded-2xl backdrop-blur-md px-12 py-8">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-snug text-[#2E2E2E] pb-4">
             <p className="text-[#000]"> Super <span className="text-[#2BA14D]">Light</span> </p>
             <p className="text-[#000]">Super <span className="text-[#afeb24]">Bright</span></p>
