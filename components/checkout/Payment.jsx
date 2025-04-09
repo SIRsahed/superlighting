@@ -9,14 +9,14 @@ import { SiAmericanexpress } from "react-icons/si";
 const Payment = () => {
   return (
     <section className="payment container w-full mx-auto py-12 px-4">
-      <div className="container w-full mx-auto flex flex-col md:flex-row gap-8 items-center justify-center">
+      <div className="container w-full mx-auto flex flex-col md:flex-row gap-8 items-center justify-center ">
         <div className="w-full md:w-1/2 flex flex-col gap-6  ">
           <form action="" method="post" className="w-full">
             <div className="bg-gray-100 border-2 border-gray-100 py-6 px-6 md:px-10">
               <div className="p-4 ">
                 <p className="text-2xl text-center md:text-left">
                   Payment Method
-                  <span className="">(Please select a payment method)</span>
+                  <span className="">(Select a method)</span>
                 </p>
               </div>
 
@@ -43,7 +43,7 @@ const Payment = () => {
                 <div className=" py-6 ">
                   <p className="text-xl">Mobile Wallet/Banking</p>
                 </div>
-                <div className=" flex flex-col sm:flex-col sm:justify-start gap-4 md:flex-row  justify-center md:justify-start my-4 ">
+                <div className=" flex flex-col sm:flex-col  sm:justify-start gap-4 md:flex-row  justify-center md:justify-start my-4 ">
                   <div className=" flex items-center gap-2 bg-white p-4 border-gray-300 border-2 rounded-md">
                     <input
                       type="radio"
@@ -180,14 +180,14 @@ const Payment = () => {
                 </div>
 
                 <hr className="text-gray-300" />
-                <div className="promo ">
+                <div className="promo flex sm:flex-col">
                     <div className="flex flex-col md:flex-row p-4 gap-4 items-center">
                         <div className="icon-words w-full md:w-1/2">
                             <h2 className="font-bold">Promo Code</h2>
                             <p>Apply Promo Code</p>
                         </div>
                         <div className="">
-                            <input className='bg-white rounded p-2 text-gray-800' type="text" />
+                            <input className='bg-white rounded p-2 text-gray-800 ' type="text" />
                         </div>
                     </div>
                 </div>
