@@ -100,7 +100,7 @@ const Payment = () => {
                 </div>
 
                 <hr className="text-gray-300" />
-                <div className="flex flex-col md:flex-row p-4 gap-4 items-center">
+                <div className="flex flex-row md:flex-row p-4 gap-4 items-center">
                     <input type="checkbox" name="" id="" />
                     <label htmlFor="" className="text-sm text-gray-900">
                       I have read and agree to the terms and conditions
@@ -129,6 +129,81 @@ const Payment = () => {
               </div>
             </div>
           </form>
+        </div>
+
+        <div className="w-full md:w-1/2 flex flex-col gap-6  ">
+        
+            <div className="w-full md:w-full bg-green-400 text-white border-2  py-6 px-6 md:px-10 ">
+                <div className="p-4 ">
+                    <p className="text-2xl text-center md:text-left">Order Summary</p>
+                </div>
+
+                <hr className="text-gray-300" />
+                <div className="flex flex-col md:flex-row p-4 gap-4 items-center">
+                    
+                    <div className="icon-words flex justify-between gap-6 w-full md:w-1/2">
+                       <div className="">
+                         <h2 className="font-bold">SubTotal Amount</h2>
+                       </div>
+                       <div className="">
+                            <p>৳ 5000</p>
+                       </div>
+                    </div>
+                </div>
+
+                <hr className="text-gray-300" />
+                <div className="flex flex-col md:flex-row p-4 gap-4 items-center">
+                    
+                    <div className="icon-words flex justify-between gap-6 w-full md:w-1/2">
+                        <div className="">
+                            <h2 className="font-bold">Service Charge</h2>
+                        </div>
+                        <div className="">
+                                <p>৳ 1000</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <hr className="text-gray-300" />
+                <div className="flex flex-col md:flex-row p-4 gap-4 items-center">
+                    
+                    <div className="icon-words flex justify-between gap-6 w-full md:w-1/2">
+                        <div className="">
+                            <h2 className="font-bold">Total Amount</h2>
+                        </div>
+                        <div className="">
+                                <p>৳ 5000</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <hr className="text-gray-300" />
+                <div className="promo ">
+                    <div className="flex flex-col md:flex-row p-4 gap-4 items-center">
+                        <div className="icon-words w-full md:w-1/2">
+                            <h2 className="font-bold">Promo Code</h2>
+                            <p>Apply Promo Code</p>
+                        </div>
+                        <div className="">
+                            <input className='bg-white rounded p-2 text-gray-800' type="text" />
+                        </div>
+                    </div>
+                </div>
+                <hr className="text-gray-300" />
+                <div className=" text-white p-6  md:px-10">
+                        <button className='bg-white rounded text-green-500 px-6 py-3 w-full'>
+                            Proceed To Checkout
+                        </button>
+                </div>
+
+                
+                
+
+            </div>
+            
+            
         </div>
       </div>
     </section>
