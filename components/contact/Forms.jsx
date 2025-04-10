@@ -36,7 +36,7 @@ const Forms = () => {
                             </div>
                             <div className="icon-words w-full md:w-1/2">
                                 <h2 className="font-bold">Email Us</h2>
-                                <p>superlightingbd1@gmail.com</p>
+                                <p>superlightingbd1..gmail.com</p>
                             </div>
                         </div>
                         <div  className="flex gap-4 items-center">

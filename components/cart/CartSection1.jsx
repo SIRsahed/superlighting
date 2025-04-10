@@ -1,7 +1,7 @@
 import React from 'react'
-import cart1 from '@/public/cart1.jpg'
-import cart2 from '@/public/cart2.jpg'
-import cart3 from '@/public/cart3.jpg'
+import cart1 from '../components/public/cart1.jpg'
+import cart2 from '../components/public/cart2.jpg'
+import cart3 from '../components/public/cart3.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 

@@ -7,7 +7,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { FaRegHeart, FaRegUser } from "react-icons/fa";
 import { LuShoppingCart } from "react-icons/lu";
 import { RxCross1 } from "react-icons/rx";
-import navLogo from "@/public/logo.png";
+import navLogo from "../components/public/logo.png";
 
 
 const Navbar = () => {

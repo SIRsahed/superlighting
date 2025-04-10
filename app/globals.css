@@ -1,4 +1,4 @@
-@import "tailwindcss";
+..import "tailwindcss";
 
 body {
   box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
   max-width: 1320px;
 }
 
-@media (max-width: 575px) {
+..media (max-width: 575px) {
   .container {
     padding: 0 5px;
   }

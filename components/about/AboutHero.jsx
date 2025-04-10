@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image"
-import AboutHero2 from "@/public/aboutHero2.avif";
+import AboutHero2 from "../components/public/aboutHero2.avif";
 const AboutHero = () => {
   
   return (

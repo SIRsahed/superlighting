@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Banner7 from "@/public/banner_bg.jpg";
+import Banner7 from "../components/public/banner_bg.jpg";
 import Link from "next/link";
 
 const Banner = () => {
