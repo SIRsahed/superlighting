@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Customer1 from "@/public/customer1.png";
-import Customer2 from "@/public/customer2.png";
-import Customer3 from "@/public/customer3.png";
-import AboutCustomer from "@/public/styleHome.png";
+import Customer1 from "../../../public/assets/customer1.png";
+import Customer2 from "../../../public/assets/customer2.png";
+import Customer3 from "../../../public/assets/customer3.png";
+import AboutCustomer from "../../../public/assets/styleHome.png";
 
 const AboutCustomers = () => {
   const customerCard = [

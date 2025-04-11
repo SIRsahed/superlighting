@@ -4,7 +4,7 @@ import { IoStar } from "react-icons/io5";
 import { IoMdHeart } from "react-icons/io";
 import { FaRegEye } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
-import lights from '@/public/lights.jpg';
+import lights from '../../../public/assets/lights.jpg';
 
 const Bestseller = () => {
 

@@ -2,7 +2,7 @@ import React from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import Image from "next/image";
-import About2 from "@/public/about2.jpg"
+import About2 from "../../../public/assets/about2.jpg"
 import Link from "next/link";
 
 const Blog = () => {

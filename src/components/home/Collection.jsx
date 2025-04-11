@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image"
-import Image1 from '@/public/image1.jpg';
-import image2 from '@/public/image2.jpg';
+import Image1 from '../../../public/assets/image1.jpg';
+import image2 from '../../../public/assets/image2.jpg';
 
 const Collection = () => {
   return (

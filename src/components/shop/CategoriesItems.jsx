@@ -3,9 +3,9 @@ import dynamic from 'next/dynamic'
 const CategoriesShop = dynamic(()=> import('@/components/Shop/CategoriesShop'))
 const CategoriesShort = dynamic(()=> import('@/components/Shop/CategoriesShort'))
 const CategoriesListItems = dynamic(()=> import('@/components/Shop/CategoriesListItems'))
-import shop1 from '@/public/shop1.png'
-import shop2 from '@/public/shop2.png'
-import shop3 from '@/public/shop3.png'
+import shop1 from '../../../public/assets/shop1.png'
+import shop2 from '../../../public/assets/shop2.png'
+import shop3 from '../../../public/assets/shop3.png'
 const CategoriesItems = () => {
   const shop = [
     {

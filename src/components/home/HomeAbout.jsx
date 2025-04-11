@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import about from "@/public/about1.jpg";
-import aboutone from "@/public/about2.jpg";
-import icon from "@/public/icon.png";
-import happy from "@/public/happy.png";
-import quality from "@/public/quality.png";
-import champion from "@/public/champion.png";
-import setting from "@/public/setting.png";
-import awards from "@/public/awards.png";
+import about from "../../../public/assets/about1.jpg";
+import aboutone from "../../../public/assets/about2.jpg";
+import icon from "../../../public/assets/icon.png";
+import happy from "../../../public/assets/happy.png";
+import quality from "../../../public/assets/quality.png";
+import champion from "../../../public/assets/champion.png";
+import setting from "../../../public/assets/setting.png";
+import awards from "../../../public/assets/awards.png";
 import { FaCheck } from "react-icons/fa6";
 
 

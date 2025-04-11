@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from "next/image"
-import MissionImg from "@/public/mission.png";
-import Vision from "@/public/vision.png";
-import System from "@/public/system.png";
+import MissionImg from "../../../public/assets/mission.png";
+import Vision from "../../../public/assets/vision.png";
+import System from "../../../public/assets/system.png";
 
 
 const Mission = () => {

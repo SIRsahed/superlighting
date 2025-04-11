@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image"
-import Star from "@/public/star.png";
-import User2 from "@/public/user2.jpg";
+import Star from "../../../public/assets/star.png";
+import User2 from "../../../public/assets/user2.jpg";
 
 const ClientSay = () => {
 

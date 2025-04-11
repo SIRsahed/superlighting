@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from "next/image"
-import HighBayLight from '@/public/led-high-bay.jpg'
-import FloodLight from '@/public/floodlight.jpg'
-import PanelLight from '@/public/panel-light.jpg'
-import StreetLight from '@/public/street-light.jpg'
+import HighBayLight from '../../../public/assets/led-high-bay.jpg'
+import FloodLight from '../../../public/assets/floodlight.jpg'
+import PanelLight from '../../../public/assets/panel-light.jpg'
+import StreetLight from '../../../public/assets/street-light.jpg'
 import Link from 'next/link'
 
 
