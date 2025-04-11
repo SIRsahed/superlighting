@@ -10,15 +10,14 @@ import HomeAbout from "@/components/home/HomeAbout";
 import Products from "@/components/home/Products";
 import SaleBanner from "@/components/home/SaleBanner";
 
-
 export default function Home() {
   return (
     <>
       <Banner />
       <Category />
-      <Products/>
-      <Delivary/>
-      <Collection/>
+      <Products />
+      <Delivary />
+      <Collection />
       <FeaturedProducts />
       <SaleBanner />
       <Bestseller />
