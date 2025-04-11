@@ -1,17 +1,19 @@
 import React from "react";
-import Image from "next/image";
-import Banner7 from "../../../public/assets/banner_bg.jpg";
 import Link from "next/link";
 
 const Banner = () => {
 
   return (
-    <section className="relative py-[170px] mb-12 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:content-[''] after:bg-black after:-z-10 after:opacity-30">
-      <Image
-        className="object-cover w-full h-full -z-10"
-        src={Banner7}
-        layout="fill"
-        alt="Super Light BD Banner" />
+    <section className="lg:py-[170px] py-12" 
+      style={
+        {
+          backgroundImage: "url('../../assets/banner_bg.jpg')",
+          backgroundPosition: "center",
+          backgroundRepeat: "no repeat",
+          backgroundSize: "cover"
+        }
+      }
+    >
       <div className="container mx-auto">
         <div className="lg:max-w-[50%] max-w-[90%] bg-white mx-auto rounded-2xl backdrop-blur-md px-12 py-8">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-snug text-[#2E2E2E] pb-4">
