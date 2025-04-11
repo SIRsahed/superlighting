@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import icon1 from '../components/public/icon1.png'
-import icon2 from '../components/public/icon2.png'
-import icon3 from '../components/public/icon3.png'
-import icon4 from '../components/public/icon4.png'
+import icon1 from '@/public/icon1.png'
+import icon2 from '@/public/icon2.png'
+import icon3 from '@/public/icon3.png'
+import icon4 from '@/public/icon4.png'
 
 
 

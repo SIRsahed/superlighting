@@ -1,10 +1,8 @@
 import React from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
-import About2 from "../components/../components/public/about2.jpg"
+import About2 from "@/public/about2.jpg"
 import Link from "next/link";
 
 const Blog = () => {
