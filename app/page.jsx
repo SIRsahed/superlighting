@@ -1,14 +1,14 @@
-import Banner from "../components/Home/Banner";
-import Bestseller from "../components/Home/Bestseller";
-import Blog from "../components/Home/Blog";
-import Category from "../components/Home/Category";
-import ClientSay from "../components/Home/ClientSay";
-import Collection from "../components/Home/Collection";
-import Delivary from "../components/Home/Delivary";
-import FeaturedProducts from "../components/Home/FeaturedProducts";
-import HomeAbout from "../components/Home/HomeAbout";
-import Products from "../components/Home/Products";
-import SaleBanner from "../components/Home/SaleBanner";
+import Banner from "@/components/home/Banner";
+import Bestseller from "@/components/home/Bestseller";
+import Blog from "@/components/home/Blog";
+import Category from "@/components/home/Category";
+import ClientSay from "@/components/home/ClientSay";
+import Collection from "@/components/home/Collection";
+import Delivary from "@/components/home/Delivary";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import HomeAbout from "@/components/home/HomeAbout";
+import Products from "@/components/home/Products";
+import SaleBanner from "@/components/home/SaleBanner";
 
 
 export default function Home() {
