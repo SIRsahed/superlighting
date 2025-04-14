@@ -1,12 +1,19 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'; // Import useState
 import dynamic from 'next/dynamic'
 const CategoriesShop = dynamic(()=> import('@/components/shop/CategoriesShop'))
 const CategoriesShort = dynamic(()=> import('@/components/shop/CategoriesShort'))
 const CategoriesListItems = dynamic(()=> import('@/components/shop/CategoriesListItems'))
+const PaginationControls = dynamic(() => import('@/components/shop/PaginationControls'));
+const CategoriesShopListItem = dynamic(() => import('@/components/shop/CategoriesShopListItem')); // Import the new list item component
 import shop1 from '../../../public/assets/shop1.png'
 import shop2 from '../../../public/assets/shop2.png'
 import shop3 from '../../../public/assets/shop3.png'
 const CategoriesItems = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [sortCriteria, setSortCriteria] = useState('default'); // Add state for sorting
+  const [viewMode, setViewMode] = useState('grid'); 
+  const itemsPerPage = 6; 
   const shop = [
     {
       id: 1,
@@ -117,7 +124,43 @@ const CategoriesItems = () => {
       stars: 4,
     },
   ];
-  
+  // Sorting Logic
+  const sortedShop = [...shop].sort((a, b) => {
+    switch (sortCriteria) {
+      case 'new':
+        return b.id - a.id;
+      case 'low':
+        return a.price - b.price;
+      case 'high':
+        return b.price - a.price;
+      case 'default':
+      default:
+        return a.id - b.id;
+    }
+  });
+
+  const totalItems = sortedShop.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = Math.min(startIndex + itemsPerPage, totalItems); // Ensure endIndex doesn't exceed totalItems
+  const currentItems = sortedShop.slice(startIndex, endIndex);
+
+  const handlePageChange = (page) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
+    }
+  };
+
+  const handleSortChange = (criteria) => {
+    setSortCriteria(criteria);
+    setCurrentPage(1); 
+  };
+
+  const handleViewChange = (mode) => {
+    setViewMode(mode);
+  };
+
   return (
     <section className='lg:py-20 py-12 bg-white'>
         <div className="container mx-auto lg:px-0 px-4">
@@ -126,17 +169,39 @@ const CategoriesItems = () => {
                    <CategoriesListItems/>
                 </div>
                 <div className="">
-                  <CategoriesShort/>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {
-                    shop.map((item)=>(
-                      <CategoriesShop key={item.id} item={item}/>
-                    ))
-                  }
+                  <CategoriesShort
+                    sortCriteria={sortCriteria}
+                    onSortChange={handleSortChange}
+                    startIndex={startIndex}
+                    endIndex={endIndex}
+                    totalItems={totalItems}
+                    viewMode={viewMode} 
+                    onViewChange={handleViewChange} 
+                  />
+                  <div className={`${
+                    viewMode === 'grid'
+                      ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'
+                      : 'flex flex-col gap-4'
+                    } mb-8`}
+                  >
+                    {
+                      currentItems.map((item)=>(
+                        viewMode === 'grid' ? (
+                          <CategoriesShop key={`${item.id}-grid`} item={item}/>
+                        ) : (
+                          <CategoriesShopListItem key={`${item.id}-list`} item={item}/>
+                        )
+                      ))
+                    }
+                  </div>
+                   <PaginationControls
+                    currentPage={currentPage}
+                    totalPages={totalPages}
+                    onPageChange={handlePageChange}
+                  />
                 </div>
                 </div>
             </div>
-        </div>
     </section>
   )
 }
