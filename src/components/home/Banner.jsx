@@ -4,7 +4,7 @@ import Link from "next/link";
 const Banner = () => {
 
   return (
-    <section className="lg:py-[170px] py-12" 
+    <section className="lg:py-[170px] py-12"
       style={
         {
           backgroundImage: "url('../../assets/banner_bg.jpg')",
