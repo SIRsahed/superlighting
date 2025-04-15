@@ -2,7 +2,7 @@ import React from "react";
 import { FaEquals } from "react-icons/fa";
 import { CgMenuGridR } from "react-icons/cg";
 
-const CategoriesShort = ({ sortCriteria, onSortChange, startIndex, endIndex, totalItems, viewMode, onViewChange }) => {
+const Short = ({ sortCriteria, onSortChange, startIndex, endIndex, totalItems, viewMode, onViewChange }) => {
   return (
     <div className="flex flex-wrap justify-between items-center gap-4 mb-5 px-4">
       <div className="flex items-center gap-x-4">
@@ -37,4 +37,4 @@ const CategoriesShort = ({ sortCriteria, onSortChange, startIndex, endIndex, tot
   );
 };
 
-export default CategoriesShort;
+export default Short;

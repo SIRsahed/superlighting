@@ -2,8 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FaStar, FaRegHeart, FaShoppingCart } from 'react-icons/fa'; // Assuming you might want icons
 
-const CategoriesShopListItem = ({ item }) => {
-  // Basic star rating display (similar logic might be in CategoriesShop)
+const ShopCardHorizontal = ({ item }) => {
   const renderStars = (count) => {
     const stars = [];
     for (let i = 0; i < 5; i++) {
@@ -16,7 +15,6 @@ const CategoriesShopListItem = ({ item }) => {
 
   return (
     <div className="flex flex-col md:flex-row items-center border border-gray-200 rounded-md p-4 mb-4 gap-4 w-full hover:shadow-md transition-shadow duration-200">
-      {/* Image */}
       <div className="flex-shrink-0 w-full md:w-40 h-40 relative mb-4 md:mb-0">
         <Image
           src={item.image}
@@ -27,7 +25,6 @@ const CategoriesShopListItem = ({ item }) => {
         />
       </div>
 
-      {/* Details */}
       <div className="flex-grow text-center md:text-left">
         <h3 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h3>
         <div className="flex items-center justify-center md:justify-start mb-2">
@@ -57,4 +54,4 @@ const CategoriesShopListItem = ({ item }) => {
   );
 };
 
-export default CategoriesShopListItem;
+export default ShopCardHorizontal;

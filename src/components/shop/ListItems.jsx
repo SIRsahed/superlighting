@@ -4,7 +4,7 @@ const CategoryList = dynamic(() => import("@/components/shop/CategoryList"));
 const FilterSidebar = dynamic(() => import("@/components/shop/FilterSidebar"));
 import dynamic from "next/dynamic";
 
-const CategoriesListItems = () => {
+const ListItems = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -33,4 +33,4 @@ const CategoriesListItems = () => {
   );
 };
 
-export default CategoriesListItems;
+export default ListItems;

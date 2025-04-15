@@ -4,7 +4,7 @@ import { IoStar } from "react-icons/io5";
 import { FaCartPlus } from "react-icons/fa6";
 import { FaRegEye, FaRegHeart } from "react-icons/fa";
 
-const CategoriesShop = ({item}) => {
+const ShopCard = ({item}) => {
   const icon =[
     {
       id: 1,
@@ -38,10 +38,6 @@ const CategoriesShop = ({item}) => {
     },
     {
       id: 3,
-      icon: <FaRegHeart />
-    },
-    {
-      id: 4,
       icon: <FaRegEye />
     }
   ]
@@ -87,4 +83,4 @@ const CategoriesShop = ({item}) => {
   );
 };
 
-export default CategoriesShop;
+export default ShopCard;

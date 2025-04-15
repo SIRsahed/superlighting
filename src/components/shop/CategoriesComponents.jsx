@@ -1,15 +1,15 @@
 "use client"
 import React, { useState } from 'react'; // Import useState
 import dynamic from 'next/dynamic'
-const CategoriesShop = dynamic(()=> import('@/components/shop/CategoriesShop'))
-const CategoriesShort = dynamic(()=> import('@/components/shop/CategoriesShort'))
-const CategoriesListItems = dynamic(()=> import('@/components/shop/CategoriesListItems'))
+const CategoriesShop = dynamic(()=> import('@/components/shop/ShopCard'))
+const CategoriesShort = dynamic(()=> import('@/components/shop/Short'))
+const CategoriesListItems = dynamic(()=> import('@/components/shop/ListItems'))
 const PaginationControls = dynamic(() => import('@/components/shop/PaginationControls'));
-const CategoriesShopListItem = dynamic(() => import('@/components/shop/CategoriesShopListItem')); // Import the new list item component
+const CategoriesShopListItem = dynamic(() => import('@/components/shop/ShopCardHorizontal')); // Import the new list item component
 import shop1 from '../../../public/assets/shop1.png'
 import shop2 from '../../../public/assets/shop2.png'
 import shop3 from '../../../public/assets/shop3.png'
-const CategoriesItems = () => {
+const CategoriesComponents = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [sortCriteria, setSortCriteria] = useState('default'); // Add state for sorting
   const [viewMode, setViewMode] = useState('grid'); 
@@ -206,4 +206,4 @@ const CategoriesItems = () => {
   )
 }
 
-export default CategoriesItems
+export default CategoriesComponents
