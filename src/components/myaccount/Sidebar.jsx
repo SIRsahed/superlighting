@@ -4,7 +4,6 @@ const Sidebar = ({ selected, setSelected }) => {
   const menuItems = [
     'My Account',
     'My Orders',
-    'My Lists',
     'My Wishlist',
   ];
 
