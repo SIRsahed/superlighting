@@ -19,8 +19,6 @@ const categories = [
 
 const CategoryList = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-
-  // Filter products based on category
   const filteredProducts =
     selectedCategory === "All"
       ? allProducts
