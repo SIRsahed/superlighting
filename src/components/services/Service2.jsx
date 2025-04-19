@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from "next/image"
-import StreetLighting from "@/public/streetLighting.avif";
-import GardenLighting from "@/public/gardenLighting1.avif";
-import BuildingLighting from "@/public/buildingLighting.avif";
+import StreetLighting from "../../../public/assets/streetLighting.avif";
+import GardenLighting from "../../../public/assets/gardenLighting1.avif";
+import BuildingLighting from "../../../public/assets/buildingLighting.avif";
 const Service2 = () => {
 
   const serviceTwo = [
