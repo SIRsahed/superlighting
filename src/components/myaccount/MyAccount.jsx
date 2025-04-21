@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const MyAccount = () => (
     <div className="px-4 md:px-6 lg:px-8">
         <h2 className="text-2xl font-semibold mb-4">My Account</h2>
@@ -14,6 +16,7 @@ const MyAccount = () => (
                     <input
                         type="text"
                         id="name"
+                        value={'fullname '}
                         name="name"
                         className="w-full md:w-2/3 lg:w-1/2 bg-white p-2 border border-gray-300 rounded"
                         required
@@ -28,6 +31,7 @@ const MyAccount = () => (
                         type="email"
                         id="email"
                         name="email"
+                        value={"user@mail.com"}
                         className="w-full md:w-2/3 lg:w-1/2 bg-white p-2 border border-gray-300 rounded"
                         required
                     />
@@ -41,6 +45,7 @@ const MyAccount = () => (
                         type="tel"
                         id="phone"
                         name="phone"
+                        value={'01911998877'}
                         className="w-full md:w-2/3 lg:w-1/2 bg-white p-2 border border-gray-300 rounded"
                         required
                     />
@@ -55,6 +60,7 @@ const MyAccount = () => (
                         type="password"
                         id="password"
                         name="password"
+                        value={'*********'}
                         className="w-full md:w-2/3 lg:w-1/2 bg-white p-2 border border-gray-300 rounded"
                         required
                     />
@@ -71,6 +77,7 @@ const MyAccount = () => (
                         type="password"
                         id="confirm-password"
                         name="confirm-password"
+                        value={'*********'}
                         className="w-full md:w-2/3 lg:w-1/2 bg-white p-2 border border-gray-300 rounded"
                         required
                     />
